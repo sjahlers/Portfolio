@@ -34,12 +34,12 @@ function App() {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  var menuLinks =   document.getElementsByClassName('menu-link');
-  for (var i=0; i<menuLinks.length; i++) {
-    menuLinks[i].addEventListener("mouseenter", function() {
+  var navLinks =   document.getElementsByClassName('nav-link');
+  for (var i=0; i<navLinks.length; i++) {
+    navLinks[i].addEventListener("mouseenter", function() {
       this.previousSibling.classList.add("rotate");
     });
-    menuLinks[i].addEventListener("mouseleave", function() {
+    navLinks[i].addEventListener("mouseleave", function() {
       this.previousSibling.classList.remove("rotate");
     });
   }

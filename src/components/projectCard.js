@@ -10,7 +10,7 @@ import fcb from '../img/fcb.jpg';
 const myProjects = [
   {
     name: 'INxSQL E-Commerce',
-    link: '/projects/inxsql',
+    link: 'https://demo.inxsql.com',
     img: demo,
     desc: 'An e-commerce website powered by INxSQL Software.'
   },
@@ -52,13 +52,13 @@ class ProjectCard extends React.Component {
       <div className='row'>
         {myProjects.map(project=>
           <div className='col-12 col-md-6 col-xl-4' key={project.name}>
-            <Link to={project.link} className='project'>
+            <a href={project.link} target='_blank' className='project'>
               <p className='project-title'>{project.name}</p>
               <img src={project.img} className='project-img' alt="Project Screenshot"/>
               <div className='project-desc'>
                 <p>{project.desc}</p>
               </div>
-            </Link>
+            </a>
           </div>
         )}
       </div>
