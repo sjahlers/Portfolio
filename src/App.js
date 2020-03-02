@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+import './App.scss';
+import Home from './components/home';
+import NavItems from './components/nav';
+import Inxsql from './components/projects/inxsql';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="container">
+        <div className="row">
+          <Link to="/" className="pagetitle col-6">
+            <h1>Sara Ahlers</h1>
+            <h2>web developer</h2>
+          </Link>
+          <nav className="col-6">
+            <NavItems/>
+          </nav>
+        </div>
       </header>
+
+      <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/projects/inxsql" component={Inxsql} />
+          <Route component={Error} />
+      </Switch>
     </div>
   );
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var menuLinks =   document.getElementsByClassName('menu-link');
+  for (var i=0; i<menuLinks.length; i++) {
+    menuLinks[i].addEventListener("mouseenter", function() {
+      this.previousSibling.classList.add("rotate");
+    });
+    menuLinks[i].addEventListener("mouseleave", function() {
+      this.previousSibling.classList.remove("rotate");
+    });
+  }
+});
 
 export default App;

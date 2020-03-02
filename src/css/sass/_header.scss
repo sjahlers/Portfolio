@@ -1,0 +1,83 @@
+.pagetitle {
+  text-align: right;
+
+  h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-family: $font-content;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+}
+
+.nav-link {
+  font-size: 2em;
+  font-family: $font-heading;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+  @media only screen and (min-width: $device-md) {
+      font-size: 3em;
+  }
+}
+
+.nav-item {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: relative;
+  transition: transform 0.5s;
+}
+
+.triangle-1 {
+  border-top: 50px solid transparent;
+  border-right: 75px solid $color-hotpink;
+  border-bottom: 12.5px solid transparent;
+
+  @media only screen and (min-width: $device-lg) {
+    border-top: 75px solid transparent;
+    border-right: 112.5px solid $color-hotpink;
+    border-bottom: 18.75px solid transparent;
+  }
+}
+
+.triangle-2 {
+  border-top: 12.5px solid transparent;
+  border-left: 75px solid $color-lightpink;
+  border-bottom: 50px solid transparent;
+  left: 18.75%;
+
+  @media only screen and (min-width: $device-lg) {
+    border-top: 18.75px solid transparent;
+    border-left: 112.5px solid $color-lightpink;
+    border-bottom: 75px solid transparent;
+  }
+}
+
+.triangle-3 {
+  border-top: 12.5px solid transparent;
+  border-right: 75px solid $color-gray;
+  border-bottom: 50px solid transparent;
+
+  @media only screen and (min-width: $device-lg) {
+    border-top: 18.75px solid transparent;
+    border-right: 112.5px solid $color-gray;
+    border-bottom: 75px solid transparent;
+  }
+}
+
+.triangle.rotate {
+  transform: rotate(-15deg);
+}

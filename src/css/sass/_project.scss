@@ -1,0 +1,50 @@
+.project {
+  border-radius: 2px;
+  box-shadow: 2px 1px 3px 2px lightgrey;
+  display: block;
+  margin-bottom: 2em;
+  position: relative;
+
+  &:hover {
+    .project-desc {
+      background-color: $color-hotpink;
+    }
+  }
+}
+
+.project-img {
+  padding: 0.5em;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-desc {
+  background-color: rgba(198,83,113,0.85);
+  border-radius: 0 0 2px 2px;
+  color: white;
+  font-size: $font-size-md;
+  font-weight: 300;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transition: 0.25s;
+
+  p {
+    margin: 0;
+  }
+}
+
+.project-title {
+  font-size: $font-size-lg;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+
+  @media only screen and (min-width: $device-xl) {
+      font-size: $font-size-xl;
+  }
+}

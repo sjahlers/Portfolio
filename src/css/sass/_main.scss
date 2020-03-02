@@ -1,0 +1,86 @@
+.section-title {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: $font-size-md;
+  text-align: center;
+
+  @media only screen and (min-width: $device-lg) {
+    font-size: $font-size-lg;
+  }
+
+  h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section-triangle {
+  border-top: 50px solid transparent;
+  border-bottom: 12.5px solid transparent;
+  left: calc(50% - 75px);
+  transform: translate(-50%, 50%);
+}
+
+.tri-hotpink {
+  border-right: 75px solid $color-hotpink;
+}
+
+.tri-lightpink {
+  border-right: 75px solid $color-lightpink;
+}
+
+.tri-gray {
+  border-right: 75px solid $color-gray;
+}
+
+.about-me {
+  background-color: $color-hotpink;
+  color: white;
+  font-size: $font-size-md;
+  font-weight: 300;
+
+  @media only screen and (min-width: $device-lg) {
+      font-size: $font-size-lg;
+  }
+
+  ul {
+    column-count: 2;
+
+    @media only screen and (min-width: $device-md) {
+        column-count: 3;
+    }
+  }
+}
+
+.about-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.fancy {
+  font-family: $font-heading;
+}
+
+.contact-icons {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    margin: 1em;
+    height: 4em;
+    width: 4em;
+  }
+
+  i {
+    color: $color-gray;
+    font-size: 2.5em;
+    transition: all 0.25s;
+
+    &:hover {
+      color: $color-hotpink;
+      transform: scale(1.5);
+    }
+  }
+}

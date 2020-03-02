@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed:300,400,500,600,700&display=swap');
+
+$color-hotpink: #C65371;
+$color-lightpink: #E8C7BE;
+$color-gray: #7D8584;
+$color-black: #2A2C2B;
+
+$font-heading: 'Bad Script', cursive;
+$font-content: 'Fira Sans Extra Condensed', 'Helvetica', sans-serif;
+$font-size-xs: 0.889em;
+$font-size-sm: 1em;
+$font-size-md: 1.149em;
+$font-size-lg: 1.320em;
+$font-size-xl: 1.515em;
+$font-size-xxl: 1.741em;
+
+//BREAKPOINTS//
+$device-sm: 576px;
+$device-md: 768px;
+$device-lg: 992px;
+$device-xl: 1200px;
+$device-xxl: 1590px;
