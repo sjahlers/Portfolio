@@ -3,17 +3,17 @@ import React from 'react';
 const navItems = [
   {
     name: 'projects',
-    href: '/#projects',
+    href: '#projects',
     triNumber: 'triangle-1'
   },
   {
     name: 'about',
-    href: '/#about',
+    href: '#about',
     triNumber: 'triangle-2'
   },
   {
     name: 'contact',
-    href: '/#contact',
+    href: '#contact',
     triNumber: 'triangle-3'
   }
 ]
