@@ -62,10 +62,17 @@ a {
   font-size: $font-size-lg;
 }
 
+.hotpink {
+  color: $color-hotpink;
+}
+
 .img-responsive {
   display: block;
-  width: 100%;
   max-width: 100%;
+}
+
+.screenshot {
+  margin: 1em auto;
 }
 
 .text-center {
