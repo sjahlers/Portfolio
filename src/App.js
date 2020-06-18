@@ -8,6 +8,7 @@ import './App.scss';
 import Home from './components/home';
 import NavItems from './components/nav';
 import Inxsql from './components/projects/inxsql';
+import Marine from './components/projects/marine';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/projects/inxsql" component={Inxsql} />
+          <Route path="/projects/marine" component={Marine} />
           <Route component={Error} />
       </Switch>
     </div>

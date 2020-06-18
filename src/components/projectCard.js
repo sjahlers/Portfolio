@@ -16,7 +16,7 @@ const myProjects = [
   },
   {
     name: 'Marine Fasteners',
-    link: 'https://www.marfas.com',
+    link: 'projects/marine',
     img: marine,
     desc: "An e-commerce site built upon INxSQL's web template."
   },
