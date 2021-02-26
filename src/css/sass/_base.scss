@@ -38,11 +38,12 @@ h3 {
 }
 
 a {
-  color: $color-black;
+  color: $color-hotpink;
   text-decoration: none;
 
-  &:active {
-    color: $color-black;
+  &:hover, &:active {
+    color: $color-darkgray;
+    text-decoration: underline;
   }
 }
 

@@ -18,6 +18,9 @@ class Inxsql extends React.Component {
           <div className="col-12 col-lg-6 col-xl-4 font-md">
             <p className="font-lg">INxSQL Software is an ERP Distribution Software designed for wholesalers, distributors and industrial resellers. INxSQL's e-commerce website allows businesses to sell their inventory online, allows their customers to manage their account, and reconnects it all back into INxSQL.</p>
             <p>INxSQL's e-commerce templates needed a modern update with an enhanced user experience. I gave it a complete redesign including modern fonts, colors, and mobile-friendly layouts.</p>
+
+            <p><a href="https://demo.inxsql.com/" target="_blank">demo.inxsql.com</a></p>
+
             <p><i className="fas fa-tools" aria-hidden="true"></i> Toolbox:</p>
               <ul>
                 <li>Sass</li>
@@ -44,6 +47,12 @@ class Inxsql extends React.Component {
             <img src={demoProducts} className="img-responsive screenshot" alt="INxSQL Products Listing" title="INxSQL Products Listing"/>
             <p className="caption">Account dashboard page</p>
             <img src={demoAccount} className="img-responsive screenshot" alt="INxSQL Account Page" title="INxSQL Account Page"/>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12">
+            <p className="text-center"><a href="../#projects"><i className="fas fa-chevron-left" aria-hidden="true"></i> Back to Projects</a></p>
           </div>
         </div>
       </div>

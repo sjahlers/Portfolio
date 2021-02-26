@@ -11,6 +11,8 @@
   position: relative;
 
   &:hover {
+    text-decoration: none;
+    
     .project-desc {
       background-color: $color-hotpink;
     }

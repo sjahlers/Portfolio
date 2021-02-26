@@ -1,5 +1,11 @@
 .pagetitle {
+  color: $color-black;
   text-align: right;
+
+  &:hover {
+    color: $color-black;
+    text-decoration: none;
+  }
 
   h1 {
     font-size: 3.5em;
@@ -16,12 +22,18 @@
 }
 
 .nav-link {
+  color: $color-black;
   font-size: 2em;
   font-family: $font-heading;
   position: absolute;
   top: 50%;
   left: 25%;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    color: $color-black;
+    text-decoration: none;
+  }
 
   @media only screen and (min-width: $device-md) {
       font-size: 3em;

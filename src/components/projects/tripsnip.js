@@ -3,32 +3,28 @@ import marine from '../../img/marine.jpg';
 import marine2 from '../../img/marine2.jpg';
 import marineHover from '../../img/marine-hover.jpg';
 
-class Marine extends React.Component {
+class TripSnip extends React.Component {
   render() {
     return (
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1 className="hotpink">Marine Fasteners</h1>
+            <h1 className="hotpink">TripSnip</h1>
           </div>
         </div>
 
         <div className="row">
           <div className="col-12 col-lg-6 col-xl-4 font-md">
-            <p className="font-lg">Marine Fasteners is a full e-commerce site built upon INxSQL's web templates.</p>
-            <p>Marine Fasteners wanted to convert their Wordpress site to e-commerce on INxSQL's platform. I recreated the content and appearance of their former site, making the transition to e-commerce seamless for their customers.</p>
+            <p className="font-lg">TripSnip</p>
 
-            <p><a href="https://www.marfas.com/" target="_blank">www.marfas.com</a></p>
+            <p><a href="https://sjahlers.github.io/tripsnip/" target="_blank">TripSnip</a></p>
 
             <p><i className="fas fa-tools" aria-hidden="true"></i> Toolbox:</p>
               <ul>
-                <li>Sass</li>
-                <li>Bootstrap 3 Grid</li>
+                <li>AngularJS</li>
+                <li>REST API</li>
                 <li>JavaScript</li>
-                <li>JQuery</li>
-                <li>Razor</li>
-                <li>Visual Basic</li>
-                <li>Visual Studio</li>
+                <li>Gulp</li>
               </ul>
           </div>
           <div className="col-12 col-lg-6 col-xl-8">
@@ -57,4 +53,4 @@ class Marine extends React.Component {
   }
 }
 
-export default Marine;
+export default TripSnip;

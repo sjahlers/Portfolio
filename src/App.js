@@ -9,6 +9,7 @@ import Home from './components/home';
 import NavItems from './components/nav';
 import Inxsql from './components/projects/inxsql';
 import Marine from './components/projects/marine';
+import TripSnip from './components/projects/tripsnip';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" component={Home} exact />
           <Route path="/projects/inxsql" component={Inxsql} />
           <Route path="/projects/marine" component={Marine} />
+          <Route path="/projects/tripsnip" component={TripSnip} />
           <Route component={Error} />
       </Switch>
     </div>

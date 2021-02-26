@@ -22,7 +22,7 @@ const myProjects = [
   },
   {
     name: 'TripSnip',
-    link: 'https://sjahlers.github.io/tripsnip/',
+    link: 'projects/tripsnip',
     img: tripsnip,
     desc: 'A web app for the world traveler, using AngularJS, Gulp, and REST API.'
   },
